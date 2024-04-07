@@ -49,7 +49,7 @@ jobs:
       - name: Install Node.js dependencies 
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Setup Docsy
-        run: "npm install postcss-cli && cd themes/docsy && npm install"
+        run: "npm install -D postcss postcss-cli autoprefixer && cd themes/docsy && npm install"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
