@@ -1,0 +1,4 @@
+baseURL = 'https://cattus.alancui.cc/'
+languageCode = 'en-us'
+title = 'Cattus Tech'
+theme = 'docsy'
